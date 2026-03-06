@@ -146,6 +146,18 @@ python -m ipykernel install --user --name ef5-rti --display-name "Python (ef5-rt
 
 Then open `prepare_model.ipynb` and select the installed `Python (ef5-rti)` kernel.
 
+## Resources
+
+The notebook references the following external sources.
+
+| Source (webpage/repo) | What it is and how it is used |
+|---|---|
+| [IEM MTArchive (MRMS PrecipRate)](https://mtarchive.geol.iastate.edu/) | Iowa State IEM archive hosting historical MRMS PrecipRate files, used by `download_mrms_preciprate.sh` to pull precipitation forcing by date. |
+| [USGS StreamStats](https://streamstats.usgs.gov/) | USGS watershed delineation and basin data portal used to obtain basin boundaries and related geospatial inputs for model setup. |
+| [USGS WaterData station 04085200](https://waterdata.usgs.gov/monitoring-location/04085200/) | Station information page for the example gage in this workflow, used to verify gauge metadata and context for observation downloads. |
+| [HyDROSLab/EF5-US-Parameters](https://github.com/HyDROSLab/EF5-US-Parameters) | Parameter dataset repository referenced for national-scale EF5 parameter layers used as source inputs before clipping/preprocessing. |
+| [HyDROSLab/EF5-dockerized](https://github.com/HyDROSLab/EF5-dockerized) | Companion repository referenced for prebuilt CONUS CREST/SAC/KW parameter resources and broader EF5 workflow support assets. |
+
 ## Quality, validation, and known limitations
 
 This project is practical and useful for iterative modeling work, but it should be treated as an evolving workflow rather than a fully hardened production system.
